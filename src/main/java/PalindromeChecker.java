@@ -37,7 +37,7 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-  if(word.equals(reverse(word)) == true)
+  if(word.equals(reverse(noSpaces(word))) == true)
     return true;
   return false;
 }
@@ -48,6 +48,13 @@ public String reverse(String str)
     sNew += str.substring(x,x+1);
     return sNew;
 }
+public String noSpaces (String str)
+    String s = "";
+  for(int x = 0; x < str.length();x++)
+  if(str.substring(x,x+1).equals(" ") != true)
+  s += str.substring(x,x+1);
+  
+  return s;
 }
 
 
