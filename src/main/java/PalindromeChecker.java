@@ -48,7 +48,7 @@ public String reverse(String str)
     sNew += str.substring(x,x+1);
     return sNew;
 }
-public String noSpaces (String str)
+public String noSpaces (String str){
     String s = "";
   for(int x = 0; x < str.length();x++)
   if(str.substring(x,x+1).equals(" ") != true)
@@ -56,5 +56,5 @@ public String noSpaces (String str)
   
   return s;
 }
-
+}
 
