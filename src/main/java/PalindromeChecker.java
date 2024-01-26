@@ -56,5 +56,23 @@ public String noSpaces (String str){
   
   return s;
 }
+  public String noPunctuation(String c) {
+  String s = new String();
+  for(int x = 0; x < c.length(); x++)
+  if(c.substring(x,x+1).equals(".") == false && c.substring(x,x+1).equals(",") == false)
+  s += c.substring(x,x+1);
+  
+  return s;
+}
+public String onlyLetter(String f){
+ String cheese = "";
+   for(int x = 0; x < f.length(); x++)
+  if(Character.isLetter(f.charAt(x))==true)
+   cheese = cheese + f.substring(x,x+1);
+ 
+ return cheese;
+}
+
+  
 }
 
