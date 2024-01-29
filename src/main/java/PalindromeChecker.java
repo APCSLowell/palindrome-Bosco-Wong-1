@@ -37,7 +37,7 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-  if(word.toLowerCase.equals(noSpaces(reverse(word.toLowerCase))) == true)
+  if(word.toLowerCase().equals(noSpaces(reverse(noPunctuation(word.toLowerCase())))) == true)
     return true;
   return false;
 }
